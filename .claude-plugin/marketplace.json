@@ -1,0 +1,13 @@
+{
+  "name": "agentic-coding-library",
+  "owner": {
+    "name": "Jay Mirecki"
+  },
+  "plugins": [
+    {
+      "name": "personal-workflow",
+      "source": "./plugins/personal-workflow",
+      "description": "Personal Claude Code workflow skills: pulling GitHub issues to local plans, and following repo PR templates precisely."
+    }
+  ]
+}
