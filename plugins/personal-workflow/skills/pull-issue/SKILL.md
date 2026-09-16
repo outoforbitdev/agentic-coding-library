@@ -32,10 +32,10 @@ complete, standalone action on its own.
    ```markdown
    # [<repo>#<number>] <title>
 
-   **URL:** <url>
-   **State:** <state>
-   **Author:** <author>
-   **Labels:** <comma-separated labels, or "none">
+   - **URL:** <url>
+   - **State:** <state>
+   - **Author:** <author>
+   - **Labels:** <comma-separated labels, or "none">
 
    ## Body
 
