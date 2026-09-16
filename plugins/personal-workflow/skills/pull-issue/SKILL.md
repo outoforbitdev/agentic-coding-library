@@ -57,3 +57,14 @@ complete, standalone action on its own.
   `superpowers:brainstorming`'s issue-based entry point (this plugin's
   README links it) for that — it calls this skill first, then continues.
 - Does not modify the issue on GitHub (no comments, no labels, no closing).
+
+## Integration with brainstorming
+
+When a user asks to plan or design a solution starting from a GitHub issue
+(e.g. "let's plan out issue #47" or "help me tackle
+outoforbitdev/library-galaxy-map#47"), invoke this skill first to save the
+issue locally, then invoke `superpowers:brainstorming` and use the saved
+file's content as the seed context for that skill's classification and
+questioning steps — exactly as if the user had pasted the issue into chat.
+Do not skip straight to brainstorming without saving the issue first: the
+saved file is what makes the issue reviewable outside the chat transcript.
