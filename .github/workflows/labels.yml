@@ -1,0 +1,20 @@
+name: Sync Labels
+on:
+  issues:
+    types:
+      - opened
+      - labeled
+  pull_request:
+    types:
+      - opened
+      - labeled
+
+# Declare default permissions as read only.
+permissions: read-all
+
+jobs:
+  labels:
+    # yamllint disable-line rule:line-length
+    uses: outoforbitdev/reusable-workflows-library/.github/workflows/label-manager.yml@03971727e99eab8bdaebb84c9e2e63f3d2429eab # v1.1.0
+    permissions:
+      issues: write
