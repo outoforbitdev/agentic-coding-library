@@ -1,0 +1,25 @@
+name: Scorecard
+
+on:
+  workflow_dispatch:
+  # For Branch-Protection check. Only the default branch is supported. See
+  # https://github.com/ossf/scorecard/blob/main/docs/checks.md#branch-protection
+  branch_protection_rule:
+  # To guarantee Maintained check is occasionally updated. See
+  # https://github.com/ossf/scorecard/blob/main/docs/checks.md#maintained
+  schedule:
+    - cron: "42 7 * * 4"
+  push:
+    branches: ["main"]
+
+# Declare default permissions as read only.
+permissions: read-all
+
+jobs:
+  scorecard:
+    uses: outoforbitdev/reusable-workflows-library/.github/workflows/scorecard.yml@03971727e99eab8bdaebb84c9e2e63f3d2429eab # v1.1.0
+    permissions:
+      # Needed to upload the results to code-scanning dashboard.
+      security-events: write
+      # Needed to publish results and get a badge (see publish_results below).
+      id-token: write
