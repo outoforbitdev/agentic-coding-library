@@ -1,5 +1,6 @@
 {
   "name": "agentic-coding-library",
+  "description": "Jay Mirecki's personal Claude Code plugin marketplace.",
   "owner": {
     "name": "Jay Mirecki"
   },
