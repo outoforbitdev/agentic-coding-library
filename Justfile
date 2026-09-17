@@ -1,6 +1,6 @@
 # Bootstrap: one-time repository initialization
 bootstrap:
-    pre-commit install --hook-type commit-msg --hook-type pre-commit
+    pre-commit install
 
 # Install: no external dependencies (plain Markdown/JSON content)
 install:
