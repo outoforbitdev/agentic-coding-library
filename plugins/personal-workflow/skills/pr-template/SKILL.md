@@ -22,9 +22,11 @@ since templates can change.
 
    ```markdown
    ## Summary
+
    <1-3 bullet points of what changed and why>
 
    ## Test plan
+
    <bulleted checklist of what was actually run/verified, not what should be>
    ```
 
