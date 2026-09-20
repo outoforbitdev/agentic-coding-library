@@ -1,13 +1,13 @@
 {
-  "name": "agentic-coding-library",
+  "name": "outoforbitdev",
   "description": "Jay Mirecki's personal Claude Code plugin marketplace.",
   "owner": {
     "name": "Jay Mirecki"
   },
   "plugins": [
     {
-      "name": "personal-workflow",
-      "source": "./plugins/personal-workflow",
+      "name": "agentic-coding-library",
+      "source": "./plugins/agentic-coding-library",
       "description": "Personal Claude Code workflow skills: pulling GitHub issues to local plans, and following repo PR templates precisely."
     }
   ]

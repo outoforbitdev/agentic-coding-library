@@ -1,6 +1,6 @@
 {
-  "name": "personal-workflow",
-  "version": "0.1.0",
+  "name": "agentic-coding-library",
+  "version": "0.2.0",
   "description": "Personal Claude Code workflow skills.",
   "author": {
     "name": "Jay Mirecki"
