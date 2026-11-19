@@ -1,0 +1,13 @@
+# https://docs.github.com/en/code-security/dependabot/working-with-dependabot/dependabot-options-reference
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/" # Default .github/workflows directory
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "02:00"
+    labels:
+      - "type: chore"
+      - "work: obvious"
+      - "effort: 1"
