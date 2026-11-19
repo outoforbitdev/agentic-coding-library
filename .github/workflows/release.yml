@@ -19,7 +19,7 @@ jobs:
     if: needs.detect.outputs.should-release == 'true'
     permissions:
       contents: write
-    uses: outoforbitdev/reusable-workflows-library/.github/workflows/publish-release.yml@6d3deb76a8bc67b0c56bfae3e58d9b9566a967d0 # v1.3.0
+    uses: outoforbitdev/reusable-workflows-library/.github/workflows/publish-release.yml@fb57c9f8cd050cb02fd18b1d28e0fc23e8550a7a # v1.5.1
     with:
       version: ${{ needs.detect.outputs.new-version }}
       prerelease: ${{ needs.detect.outputs.is-prerelease == 'true' }}
