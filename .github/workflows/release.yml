@@ -12,7 +12,7 @@ jobs:
     name: Detect New Changelog Version
     permissions:
       contents: write
-    uses: outoforbitdev/reusable-workflows-library/.github/workflows/detect-new-changelog-version.yml@6d3deb76a8bc67b0c56bfae3e58d9b9566a967d0 # v1.3.0
+    uses: outoforbitdev/reusable-workflows-library/.github/workflows/detect-new-changelog-version.yml@fb57c9f8cd050cb02fd18b1d28e0fc23e8550a7a # v1.5.1
   publish:
     name: Publish Release
     needs: detect
