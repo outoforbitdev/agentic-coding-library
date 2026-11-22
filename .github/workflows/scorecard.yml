@@ -17,7 +17,7 @@ permissions: read-all
 
 jobs:
   scorecard:
-    uses: outoforbitdev/reusable-workflows-library/.github/workflows/scorecard.yml@03971727e99eab8bdaebb84c9e2e63f3d2429eab # v1.1.0
+    uses: outoforbitdev/reusable-workflows-library/.github/workflows/scorecard.yml@fb57c9f8cd050cb02fd18b1d28e0fc23e8550a7a # v1.5.1
     permissions:
       # Needed to upload the results to code-scanning dashboard.
       security-events: write
